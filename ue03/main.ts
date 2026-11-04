@@ -22,6 +22,7 @@ let b = a as Two;
 let c = a as Three;
 
 let b1: Two = a;
+
 // let c1: Three = <Three>a;
 
 function addOrConcat(a: number, b: number, c: "add" | "concat"): number | string {

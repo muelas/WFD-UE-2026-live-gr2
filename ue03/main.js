@@ -54,4 +54,3 @@ let s = "abc";
 console.log(s);
 console.log(!s);
 console.log(!!s);
-//# sourceMappingURL=main.js.map
