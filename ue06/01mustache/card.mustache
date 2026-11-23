@@ -1,0 +1,31 @@
+<!-- 03 einfaches externes Mustache Template -->
+<!--<div class="user-card">-->
+<!--    <h2>Wilkommen {{name}}!</h2>-->
+<!--    <p>Alter: {{age}}</p>-->
+<!--</div>-->
+
+<div class="user-card">
+    <h2>Current User: {{name}} {{#isOnline}}(Online){{/isOnline}}</h2>
+    <p>Zip Code: {{address.zip}}</p>
+
+    <h3>Biography</h3>
+    <p>Escaped: {{bio}}</p>
+    <p>Unescaped: {{{bio}}}</p>
+
+    <h3>Hobbies and Jobs</h3>
+    <p>Hobbies:</p>
+    <ul>
+        {{#hobbies}}
+            <li>{{.}}</li>
+        {{/hobbies}}
+    </ul>
+    <p>Jobs:</p>
+    <ul>
+        {{#jobs}}
+            <li>{{.}}</li>
+        {{/jobs}}
+        {{^jobs}}
+            <li><em>no jobs :(</em></li>
+        {{/jobs}}
+    </ul>
+</div>

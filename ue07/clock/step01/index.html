@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uhr - 01 JS</title>
+</head>
+<body>
+<div>Uhrzeit: <span id="clock">...</span></div>
+
+<script>
+    setInterval(() => {
+        const now = new Date().toLocaleTimeString();
+        document.getElementById("clock").textContent = now;
+    }, 1000);
+</script>
+</body>
+</html>
